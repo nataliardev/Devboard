@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,25 +7,60 @@
     <title>DevBoard</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/reset.css" />
-    <link rel="stylesheet" href="CSS/variables.css" />
-    <link rel="stylesheet" href="CSS/layout.css" />
-    <link rel="stylesheet" href="CSS/components.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
   </head>
   <body>
-    <header>Logo Botao de tema</header>
-    <aside><nav></nav></aside>
-    <main>
-      <section class="saudacao">Saudacao</section>
-      <section class="Dashboard">Dashboard</section>
-      <section class="card-de-tarefas">Card de tarefas</section>
-      <section class="card-de-metas">Card de metas</section>
-      <section class="card-de-produtividade">Card de produtividade</section>
-      <section class="tarefas">Seção de tarefas</section>
-    </main>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>DevBoard</h1>
+      <nav></nav>
+      <button></button>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <main>
+        <!-- Saudação -->
+        <section class="saudacao">
+          <h2>Olá! Bem-vindo(a) ao DevBoard!</h2>
+        </section>
+
+        <section class="dashboard">
+          <h2>Dashboard</h2>
+        </section>
+      </main>
+
+      <!-- Coluna Central -->
+
+      <aside class="coluna-central">
+        <h2 class="agenda">Sua agenda</h2>
+        <section class="card-de-tarefas"><h3>Tarefas</h3></section>
+        <section class="card-de-metas"><h3>Metas</h3></section>
+        <section class="card-de-produtividade">
+          <h3>Produtividade</h3>
+        </section>
+      </aside>
+
+      <!-- Coluna lateral -->
+      <aside class="coluna-lateral">
+        <h2 class="confira">Confira também:</h2>
+        <section class="dicas-lateral">
+          <h3>Dicas</h3>
+        </section>
+        <section class="artigos-uteis">
+          <h3>Artigos úteis</h3>
+        </section>
+      </aside>
+    </div>
+
     <footer></footer>
-    <script src="JS/main.js" defer></script>
-    <script src="JS/storage.js"></script>
-    <script src="JS/ui.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/storage.js" defer></script>
+    <script src="js/ui.js" defer></script>
   </body>
 </html>
