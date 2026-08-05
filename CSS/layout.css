@@ -1,0 +1,26 @@
+html,
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  top: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 320px 320px;
+  gap: 5px;
+  background-color: lightslategray;
+}
+
+aside.coluna-central {
+  background-color: yellow;
+}
+
+aside.coluna-lateral {
+  background-color: yellowgreen;
+}
