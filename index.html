@@ -18,7 +18,8 @@
     <header>
       <h1>DevBoard</h1>
       <nav></nav>
-      <button>Limpar</button>
+      <button>Iniciar/Pausar</button>
+      <p>[Cronômetro de foco (Pomodoro)]</p>
     </header>
 
     <!-- Conteúdo principal -->
@@ -26,12 +27,69 @@
       <main>
         <!-- Saudação -->
         <section class="saudacao">
-          <h2>Olá! Bem-vindo(a) ao DevBoard!</h2>
+          <h2>Olá, [Nome do usuário]! Bem-vindo(a) ao DevBoard!</h2>
+          <p>A sua ferramenta de produtividade!</p>
         </section>
 
         <section class="dashboard">
           <h2>Dashboard</h2>
-          <div class="chart-placeholder">Área do gráfico</div>
+          <div class="chart-placeholder">
+            <div class="grafico-wrapper">
+            <h2 class="grafico-titulo">Relatório de Constância (Jan - Ago)</h2>
+            
+              <div class="grafico-container">
+                
+                <!-- Janeiro -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Jan</span>
+                  <div class="pilar" style="height: 75%;"></div>
+                </div>
+
+                <!-- Fevereiro -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Fev</span>
+                  <div class="pilar" style="height: 40%;"></div>
+                </div>
+
+                <!-- Março -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Mar</span>
+                  <div class="pilar" style="height: 85%;"></div>
+                </div>
+
+                <!-- Abril -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Abr</span>
+                  <div class="pilar" style="height: 30%;"></div>
+                </div>
+
+                <!-- Maio -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Mai</span>
+                  <div class="pilar" style="height: 95%;"></div>
+                </div>
+
+                <!-- Junho -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Jun</span>
+                  <div class="pilar" style="height: 50%;"></div>
+                </div>
+
+                <!-- Julho -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Jul</span>
+                  <div class="pilar" style="height: 20%;"></div>
+                </div>
+
+                <!-- Agosto -->
+                <div class="coluna-grafico">
+                  <span class="mes-rotulo">Ago</span>
+                  <div class="pilar" style="height: 65%;"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -39,10 +97,30 @@
 
       <aside class="coluna-central">
         <h2 class="agenda">Sua agenda</h2>
-        <section class="card"><h3>Tarefas</h3></section>
-        <section class="card"><h3>Metas</h3></section>
+        <section class="card">
+          <h3>Tarefas</h3>
+          <button>+Adicionar nova tarefa</button>
+          <ul>
+            <li>☐ Estudo prático de FrontEnd</li>
+            <li>☐ Estudo teórico - Faculdade</li>
+            <li>☐ Praticar Flauta</li>
+            <li>☐ Dobrar e guardar roupas</li>
+          </ul>
+        </section>
+        <section class="card">
+        <h3>Metas</h3>
+        <button>+Adicionar nova meta</button>
+          <ul>
+            <li>☐ Dominar semântica HTML em 1 mês</li>
+            <li>☐ Dominar CSS Block, flex e grid em 1 mês</li>
+            <li>☐ Dominar música para apresentação de setembro</li>
+          </ul>
+        </section>
         <section class="card">
           <h3>Insights</h3>
+          <p>Sequência de estudos é de: 3 dias!</p>
+          <p>Melhor horário de estudo: 09:00 às 11:00</p>
+          <p>Tempo de estudos dos dia: 2h40min.</p>
         </section>
       </aside>
 
@@ -51,9 +129,24 @@
         <h2 class="confira">Confira também:</h2>
         <section class="card">
           <h3>Dicas</h3>
+          <ul>
+            <li>Tenha uma boa noite de sono!</li>
+            <li>
+            Alimente-se de forma saudável e note a diferença na sua cognição!
+          </li></ul>
         </section>
         <section class="card">
           <h3>Artigos úteis</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.pneumocenter.com.br/blog/sono-e-aprendizagem-a-importancia-de-uma-boa-noite-de-sono-para-o-desempenho-cognitivo/"
+                >Neurociência explica a importância de uma boa noite de sono
+                para o seu desempenho cognitivo</a
+              >
+              <li><a href="https://institutodelongevidade.org/longevidade-e-saude/alimentacao/saude-cerebral-e-alimentacao?gad_source=1&gad_campaignid=23858783882&gbraid=0AAAAADNOs7ON0fGCwZGaRZpKADAfI3W20&gclid=CjwKCAjw4dDTBhAqEiwAkHYmStOsJ_3O3H9bkPY92JFa0393prMuN951c3G05kWs4sxYxiftpYl2IxoC3nAQAvD_BwE">Saúde cerebral, alimentação adequada e uma vida longa:entenda a relação</a></li>
+            </li>
+          </ul>
         </section>
       </aside>
     </div>
