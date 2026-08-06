@@ -7,20 +7,44 @@ body {
 
 header {
   display: flex;
-  top: 0;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 8px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 2fr 320px 320px;
-  gap: 5px;
-  background-color: lightslategray;
+  gap: 24px;
 }
 
-aside.coluna-central {
-  background-color: yellow;
+main {
+  display: grid;
+  grid-template-rows: max-content;
+  gap: 20px;
+  padding: 16px;
 }
 
-aside.coluna-lateral {
-  background-color: yellowgreen;
+.chart-placeholder {
+  height: 300px;
+
+  border: 2px dashed #ccc;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 15px;
 }
