@@ -9,23 +9,86 @@ button {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   min-height: 220px;
-
   padding: 20px;
-
   border: 1px solid #d9d9d9;
-
   border-radius: 12px;
-
   background: white;
 }
 
 .dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   min-height: 500px;
-
   padding: 24px;
-
   border: 1px solid #d9d9d9;
-
   border-radius: 12px;
+}
+/* Estilização do painel geral */
+.grafico-wrapper {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.grafico-titulo {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Onde a mágica do alinhamento acontece */
+.grafico-container {
+  height: 300px;
+  display: flex;
+  justify-content: space-between; /* Distribui os meses igualmente */
+  align-items: flex-end; /* Alinha todos os pilares no fundo */
+  border-bottom: 2px solid #ccc; /* Linha da base do gráfico */
+  padding-bottom: 10px;
+}
+
+/* Cada conjunto (Texto + Pilar) */
+.coluna-grafico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* Ocupa a altura total do gráfico */
+  justify-content: flex-end; /* Empurra o conteúdo para a base */
+  flex: 1; /* Faz todas as colunas terem a mesma largura máxima */
+  margin: 0 4px;
+}
+
+/* Rótulo do mês acima do pilar */
+.mes-rotulo {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 8px; /* Espaço entre o texto e o topo do pilar */
+  font-weight: bold;
+}
+
+/* Pilar individual */
+.pilar {
+  width: 100%;
+  max-width: 40px; /* Largura máxima de cada pilar */
+  background: linear-gradient(180deg, #3498db, #2980b9); /* Degradê moderno */
+  border-radius: 6px 6px 0 0; /* Topo arredondado */
+  transition: all 0.3s ease;
+}
+
+/* Efeito visual ao passar o mouse */
+.pilar:hover {
+  background: linear-gradient(
+    180deg,
+    #e74c3c,
+    #c0392b
+  ); /* Muda para vermelho na instabilidade */
+  cursor: pointer;
 }
